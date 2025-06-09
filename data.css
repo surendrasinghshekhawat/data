@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+h1 span {
+    margin: 10px;
+    color: rgb(240, 179, 66);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn button{
+   margin: 0px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(49, 45, 45);
+
+}
