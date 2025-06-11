@@ -1,4 +1,4 @@
-const statsData = {
+ const statsData = {
   "2025": {
     orangeCap: [
       { player: "Virat Kohli", runs: 732 },
@@ -125,27 +125,67 @@ const statsData = {
   },
 };
 
-// let button=document.querySelectorAll(".button");
-// button.addEventListner("clcik",()=>{
-for (let a in statsData) {
-  if (typeof statsData[a] === "object") {
-    for (let b in statsData[a]) {
-        document.writeln(b + " "+ statsData[a][b] + "<br>")
-        // let statsData1=Object.entries(statsData);
-        // function fName(a,b){
-        //   statsData1.forEach((b)=>{
-        //     document.writeln(b)
-        //   })
-        // } 
-        // fName(a,b);
-    }
-  }
-  else{
-  document.writeln(a + " " + statsData[a] + "<br>");
-  }
-}
+//------------------------------------------------------------------
 
-// })
+// // let button=document.querySelectorAll(".button");
+// // button.addEventListner("clcik",()=>{
+// for (let a in statsData) {
+//   if (typeof statsData[a] === "object") {
+//     for (let b in statsData[a]) {
+//         document.writeln(b + " "+ statsData[a][b] + "<br>")
+//         // let statsData1=Object.entries(statsData);
+//         // function fName(a,b){
+//         //   statsData1.forEach((b)=>{
+//         //     document.writeln(b)
+//         //   })
+//         // } 
+//         // fName(a,b);
+
+//     }
+//   }
+//   else{
+//   document.writeln(a + " " + statsData[a] + "<br>");
+//   }
+// }
+
+// // })
+
+//------------------------------------------------------------------
+
+// // let buttons = document.querySelectorAll(".button");
+// // buttons.addEventListner("click", () => {
+
+  for (let i = 0; i < statsData["2025"].orangeCap.length; i++) {
+    const playerData = statsData["2025"].orangeCap[i];
+    document.writeln(playerData.player + "-" + playerData.runs + "<br>")
+  }
+
+
+  for (let i = 0; i < statsData["2025"].mostFours.length; i++)
+       {
+        const playerData = statsData["2025"].mostFours[i];  
+      document.writeln(playerData.player+"-"+playerData.fours+"<br>")
+      }
+
+  for (let i = 0; i < statsData["2025"].mostSixes.length; i++)
+       {
+        const playerData = statsData["2025"].mostSixes[i];  
+      document.writeln(playerData.player+"-"+playerData.sixes+"<br>")
+      }
+  for (let i = 0; i < statsData["2025"].mostCenturies.length; i++)
+       {
+        const playerData = statsData["2025"].mostCenturies[i];  
+      document.writeln(playerData.player+"-"+playerData.centuries+"<br>")
+      }
+  for (let i = 0; i < statsData["2025"].mostFifties.length; i++)
+       {
+        const playerData = statsData["2025"].mostFifties[i];  
+      document.writeln(playerData.player+"-"+playerData.fifties+"<br>")
+      }
+
+// // })
+
+//----------------------------------
 
 
 

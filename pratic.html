@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPL Stats Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="pratic.css">
+</head>
+<body>
+  <h1 class="text-center my-4"><i class="fa-solid fa-baseball-bat-ball"></i> IPL Stats Dashboard</h1>
+
+  <div class="buttons text-center">
+    <button class="button btn btn-outline-primary mx-2" data-type="orangeCap">Orange Cap (Most Runs)</button>
+    <button class="button btn btn-outline-primary mx-2" data-type="mostFours">Most Fours</button>
+    <button class="button btn btn-outline-primary mx-2" data-type="mostSixes">Most Sixes</button>
+    <button class="button btn btn-outline-primary mx-2" data-type="mostFifties">Most Fifties</button>
+    <button class="button btn btn-outline-primary mx-2" data-type="mostCenturies">Most Centuries</button>
+  </div>
+
+  <div id="output" class="container"></div>
+
+  <script src="pratic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
